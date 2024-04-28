@@ -15,6 +15,7 @@ using namespace std;
 //A universal variable stating the name of the university we are in.
 string universityName = "THD";
 //Making the parent class person which includes child classes who are students and lecturers.
+
 class PERSON
 {
 protected:
@@ -30,6 +31,8 @@ public:
         this -> email = email;
     }
 };
+
+
 //Making the child class Lecturer
 class LECTURER: public PERSON
 {
@@ -46,6 +49,8 @@ public:
         return this -> academic_title + ' ' + this -> firstName + ' ' + this -> surname;
     }
 } ;
+
+
 //Making the child class student.
 class STUDENT: public PERSON
 {
@@ -82,6 +87,8 @@ public:
         cout << "University: " << this -> university << endl;
     }
 } ;
+
+
 //Making a course class.
 class COURSE
 {
@@ -148,6 +155,8 @@ public:
         }
     }
 };
+
+
 int main()
 {
     int coursesNumber = 3;
